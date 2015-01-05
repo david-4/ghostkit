@@ -1,0 +1,82 @@
+body {
+    min-width: 950px;
+}
+
+.docs-section {
+    padding: 6rem 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 0;
+    z-index: 3;
+}
+
+.docs-header {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.docs-section .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.docs-first-section {
+    margin-top: 54px;
+    border-top: none;
+}
+
+.docs-buttons .button {
+    width: 90%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.docs-center-image img {
+    display: block;
+    margin: 0 auto;
+}
+
+.docs-buttons .button:first-child {
+    margin-left: 0;
+}
+
+.docs-navigation {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    background-color: rgba(255,255,255,.85);
+}
+
+.docs-navigation li {
+    color: #222;
+    font-weight: bold;
+}
+
+.docs-section .container img {
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+.docs-example h1,
+.docs-example h2,
+.docs-example h3,
+.docs-example h4,
+.docs-example h5,
+.docs-example h6 {
+    margin-bottom: 1rem;
+}
+
+.docs-image {
+    background-color: #eee;
+    height: 180px;
+    width: 180px;
+    line-height: 180px;
+    text-align: center;
+    color: #aaa;
+    margin: 0 auto;
+}
