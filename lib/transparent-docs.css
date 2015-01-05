@@ -55,6 +55,12 @@ body {
 .docs-navigation li {
     color: #222;
     font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.docs-navigation li p {
+    margin-bottom: 0;
 }
 
 .docs-section .container img {
@@ -79,4 +85,13 @@ body {
     text-align: center;
     color: #aaa;
     margin: 0 auto;
+}
+
+.docs-icon-container span {
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    color: #222;
 }

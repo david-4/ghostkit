@@ -277,6 +277,15 @@ input[type="reset"] {
     -webkit-transition: background-color .2s, border-color .2s;
 }
 
+button > a,
+.button > a,
+input[type="button"] > a,
+input[type="submit"] > a,
+input[type="reset"] > a {
+    display: block;
+    width: 100%;
+}
+
 button:hover,
 .button:hover,
 input[type="button"]:hover,
@@ -333,6 +342,46 @@ input[type="reset"].button-disabled {
     border-color: #ccc;
     color: #aaa;
     cursor: not-allowed;
+}
+
+.notification {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 5px 10px;
+    display: block;
+    border: none;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.notification [class*='icon-'] {
+    display: inline-block;
+    padding-right: 5px;
+    font-size: 1.6rem;
+    line-height: 19px;
+    height: 22px;
+    vertical-align: text-top;
+}
+
+.notification.notification-info {
+    background-color: #39B3EB;
+    color: #1C6586;
+}
+
+.notification.notification-success {
+    background-color: #64CA8D;
+    color: #265439;
+}
+
+.notification.notification-warn {
+    background-color: #E5DE80;
+    color: #65601B;
+}
+
+.notification.notification-danger {
+    background-color: #D77C8D;
+    color: #5A2730;
 }
 
 .jumbo {
