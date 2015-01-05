@@ -179,10 +179,12 @@ table td:last-child {
 
 
 /* General form elements */
-form .form-info {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
+@media (min-width: 400px) {
+    form .form-info {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
 }
 
 input[type="email"],
