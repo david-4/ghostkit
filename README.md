@@ -8,5 +8,15 @@ Lightweight, mobile first, UI kit for frontend developers, which are tired of wr
 <p>
   Use the <code>ghostkit-package.min.css</code> for productional usage, because it is a lot faster than serving all files   seperate from the <a href="https://github.com/janbiasi/ghostkit/blob/master/ext/">external</a> directory. The package includes all avaible parts of Ghostkit.
   </p>
-  
+
 <p>All avaible components of the Ghostkit UI are demonstratet on the Ghostkit <a href="janbiasi.github.io/ghostkit/">Website</a>. For more information, check the specification file.</p>
+
+--
+
+####Installation
+You can install Ghostkit via **bower** or manually by downloading the [zip archive](https://github.com/janbiasi/ghostkit/archive/master.zip) of branch master. Another option is to clone via Terminal (Mac) or SSH/Git Shell (Windows).
+
+```sh
+$ bower install ghostkit
+$ git clone git@github.com:janbiasi/ghostkit.git
+```
