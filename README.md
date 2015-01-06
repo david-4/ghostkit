@@ -16,7 +16,7 @@ Lightweight, mobile first, UI kit for frontend developers, which are tired of wr
 ####Installation
 You can install Ghostkit via **bower** or manually by downloading the [zip archive](https://github.com/janbiasi/ghostkit/archive/master.zip) of branch master. Another option is to clone via Terminal (Mac) or SSH/Git Shell (Windows).
 
-```sh
+```bash
 $ bower install ghostkit
 $ git clone git@github.com:janbiasi/ghostkit.git
 ```
