@@ -1,0 +1,238 @@
+@media (min-width: 400px) {
+    body {
+        min-width: 950px;
+    }
+}
+
+#ghostkit-logo {
+    width: 100px;
+    margin: 30px auto 10px auto;
+}
+
+.uppercase-col .column {
+    text-transform: uppercase;
+    background-color: #eee;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.uppercase-col .row {
+    margin-bottom: 10px;
+}
+
+table .mark-visible {
+    background-color: #CFFBE5;
+}
+
+table .mark-invisible {
+    color: #bbb;
+    text-decoration: line-through;
+}
+
+table.first-col-marked tr td,
+table.first-col-marked tr th {
+    text-align: center;
+}
+table.first-col-marked > tbody > tr > td:first-child,
+table.first-col-marked > thead > tr > th:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+.jumbo {
+    background-color: transparent;
+}
+
+.jumbo h1 {
+    text-align: center;
+}
+
+.docs-section {
+    padding: 6rem 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 0;
+    z-index: 3;
+}
+
+.docs-header,
+.upper-text {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.docs-section .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.docs-first-section {
+    margin-top: 54px;
+    border-top: none;
+}
+
+.docs-buttons .button {
+    width: 90%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+@media (max-width: 400px) {
+    .docs-buttons .button {
+        margin-bottom: 10px;
+    }
+}
+
+.docs-center-image img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+    div.docs-image {
+        margin-bottom: 20px !important;
+    }
+}
+
+.docs-buttons .button:first-child {
+    margin-left: 0;
+}
+
+.docs-navigation {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    background-color: rgba(255,255,255,.85);
+}
+
+@media (max-width: 400px) {
+    .docs-navigation {
+        min-height: 38px;
+        background-color: rgba(255,255,255,.9);
+    }
+
+    .docs-navigation ul {
+        margin-bottom: 5px;
+    }
+
+    .docs-navigation ul li {
+        display: block;
+        float: none;
+    }
+
+    .docs-navigation i {
+        line-height: 38px;
+    }
+}
+
+.docs-navigation li {
+    color: #222;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.docs-navigation li p {
+    margin-bottom: 0;
+}
+
+.docs-section .container img {
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+.docs-example h1,
+.docs-example h2,
+.docs-example h3,
+.docs-example h4,
+.docs-example h5,
+.docs-example h6 {
+    margin-bottom: 1rem;
+}
+
+.docs-image {
+    background-color: #eee;
+    height: 180px;
+    width: 180px;
+    line-height: 180px;
+    text-align: center;
+    color: #aaa;
+    margin: 0 auto;
+}
+
+.docs-icon-container span {
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    color: #222;
+}
+
+.token.string {
+    color: #FA5882;
+}
+
+.token.function {
+    color: #222;
+}
+
+.toke.comment {
+    color: #bbb;
+}
+
+pre[class*='language-'] > code[data-language] {
+    background-color: #f8f8f8;
+    border: none;
+    padding: 8px;
+}
+
+pre[class*='language-'] > code[data-language]:before,
+pre[class*='language-'] > code[data-language]::before {
+    color: #666;
+    background-color: #ddd;
+}
+
+@media (max-width: 400px) {
+    .doc-icon-lg {
+        font-size: 6rem;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .docs-icon-container .column.one {
+        float: left;
+        width: 25%;
+    }
+    .uppercase-col .column {
+        margin-bottom: 8px;
+    }
+    .docs-buttons .button:first-child {
+        margin: 10px auto;
+        width: 100%;
+    }
+    pre[class*='language-'] > code[data-language] {
+        font-size: 1.2rem;
+    }
+    pre[class*='language-'] > code[data-language]:before,
+    pre[class*='language-'] > code[data-language]::before {
+        display: none;
+    }
+    .half-cols .column {
+        width: 50%;
+        float: left;
+    }
+
+    #support img {
+        width: 80px;
+    }
+}

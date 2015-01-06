@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Transparent Kit</title>
-<link rel="stylesheet" href="lib/transparent-0.1.0.css">
-<link rel="stylesheet" href="lib/transparent-icon.css">
-<link rel="stylesheet" href="lib/ghostkit-devices.css">
-<link rel="stylesheet" href="plugins/prism.css">
-<link rel="stylesheet" href="lib/transparent-docs.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Jan Biasi">
+    <meta name="keywords" content="ui,uikit,bootstrap,userinterface,user interface,twitter,twbs,twitter bootstrap,library,css,framework,ghostkit,ghostkit ui, ghostkit.css, ghostkit css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ghostkit - UI Kit with benefits</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="img/ghost-icon.png">
+    <link rel="shortcut/icon" type="image/png" href="img/ghost-icon.png">
+    <link rel="stylesheet" href="plugins/prism.css">
+    <link rel="stylesheet" href="ghostkit-package.min.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body>
     <div class="container">
         <div class="docs-navigation">
             <div class="container">
-                <ul class="navigation">
+                <ul class="js-main-nav navigation hide-on-mobile">
                     <li>
-                        <a href="#typography"><p class="docs-header">Typo</p></a>
+                        <a href="#typography">Typo</a>
                     </li>
                     <li>
-                        <a href="#elements"><p class="docs-header">Elements</p></a>
+                        <a href="#grid">Grid</a>
                     </li>
                     <li>
-                        <a href="#util"><p class="docs-header">Utility</p></a>
+                        <a href="#elements">Elements</a>
+                    </li>
+                    <li>
+                        <a href="#icons">Icons</a>
+                    </li>
+                    <li>
+                        <a href="#usage">usage</a>
                     </li>
                 </ul>
+                <i class="js-nav-icon icon-three-bars show-on-mobile"></i>
             </div>
         </div>
-        <div class="docs-section docs-first-section" id="typography">
+        <div class="docs-section docs-first-section">
+            <div class="jumbo">
+                <img id="ghostkit-logo" class="img-centered" src="img/ghost-icon.png" alt="Ghost Icon" />
+                <h1>Ghost Kit</h1>
+                <p class="text-center upper-text">Lightweight UI Kit with benefits</p>
+            </div>
+        </div>
+        <div class="docs-section" id="typography">
             <h6 class="docs-header">Typography</h6>
             <div class="container docs-example">
                 <div class="row">
@@ -47,9 +64,9 @@
                 <div class="row">
                     <div class="column six">
                         <p><strong>The typography is based on</strong> the Raleway font, served
-                        by <a href="http://google.com/fonts">Google Fonts</a> server. If you want to use
-                        another local font during to high loading times, you can. Just include the font
-                        and add it to the body tag with alternate fonts and a <code>sans-serif</code> fallback.</p>
+                            by <a href="http://google.com/fonts">Google Fonts</a> server. If you want to use
+                            another local font during to high loading times, you can. Just include the font
+                            and add it to the body tag with alternate fonts and a <code>sans-serif</code> fallback.</p>
                         <p><strong>Classes are also provided</strong> for every heading, containing
                         its specific <code>letter-spacing</code>, <code>font-size</code> and <code>line-height</code>.
                         Use the classes <code>.h1</code> - <code>.h6</code> to add the specific style to any element.
@@ -66,44 +83,141 @@
                 </div>
             </div>
         </div>
+
         <div class="docs-section" id="typo-util">
-            <h6 class="docs-header">Typo Utility</h6>
-            <p>Transparent provides some new <code>HTML5</code> tags for advanced typography stilings. One of them is the
+                <h6 class="docs-header">Typo Utility</h6>
+                <p>Transparent provides some new <code>HTML5</code> tags for advanced typography stilings. One of them is the
                 <code>&lt;del&gt;</code> tag, to strike through text which isn't longer valid. Another useful helper, called
                 <code>&lt;mark&gt;</code> to highlight content like a stabilo. Mostly seen on this page, there's the <code>&lt;code&gt;</code> tag, which
-                enables you to mark program-code. See the example below with a tiny meanless story:
-            </p>
-            <div class="container">
-                <div class="row">
-                    <div class="column six">
-                        <p>The first mate and his Skipper too <del>will do their very best to make the others comfortable in their tropic island nest.</del> Flying away on a wing and a prayer. Who could it be? Believe it or not its just me. we might as well say... Would you be mine? Could you be mine? </p>
+                enables you to mark program-code. See the example below with a tiny meanless story:</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="column six">
+                            <p>The first mate and his Skipper too <del>will do their very best to make the others comfortable in their tropic island nest.</del> Flying away on a wing and a prayer. Who could it be? Believe it or not its just me. we might as well say... Would you be mine? Could you be mine? </p>
+                        </div>
+                        <div class="column six">
+                            <p>Won't you be my neighbor. Fish <mark>don't fry in the kitchen and beans don't burn</mark> on the grill. Took a whole lotta tryin' just to get up that hill. And we'll do it our way yes our way. Make all our dreams come true for me and you. Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. As long as we <code>live its you</code> and me baby. </p>
+                        </div>
                     </div>
-                    <div class="column six">
-                        <p>Won't you be my neighbor. Fish <mark>don't fry in the kitchen and beans don't burn</mark> on the grill. Took a whole lotta tryin' just to get up that hill. And we'll do it our way yes our way. Make all our dreams come true for me and you. Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. As long as we <code>live its you</code> and me baby. </p>
+                </div>
+            </div>
+
+        <div class="docs-section" id="grid">
+            <h6 class="docs-header">Fluid Grid</h6>
+            <p>Ghostkit comes with a simple to use grid system which requires a minimal width of 400px to work (mobile view).
+                Parts of the grid can be hidden with the <a href="#device-classes">device classes</a> below. I'll show you a short example
+                of this grid:</p>
+            <div class="container uppercase-col">
+                <div class="row">
+                    <div class="column one">
+                        one
+                    </div>
+                    <div class="column eleven">
+                        eleven
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column two">
+                        two
+                    </div>
+                    <div class="column ten">
+                        ten
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column three">
+                        three
+                    </div>
+                    <div class="column nine">
+                        nine
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column four">
+                        four
+                    </div>
+                    <div class="column eight">
+                        eight
+                    </div>
+                </div>
+                <div class="hide-on-mobile">
+                    <div class="row">
+                            <div class="column five">
+                                five
+                            </div>
+                            <div class="column seven">
+                                seven
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="column six">
+                            six
+                        </div>
+                        <div class="column six">
+                            six
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column five">
+                            five
+                        </div>
+                        <div class="column two">
+                            two
+                        </div>
+                        <div class="column five">
+                            five
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column two">
+                            two
+                        </div>
+                        <div class="column four">
+                            four
+                        </div>
+                        <div class="column three">
+                            three
+                        </div>
+                        <div class="column three">
+                            three
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column eight">
+                            eight
+                        </div>
+                        <div class="column two">
+                            two
+                        </div>
+                        <div class="column two">
+                            two
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="docs-section" id="elements">
-                <h6 class="docs-header">Buttons</h6>
-                <p><em>Caption for buttons...</em></p>
-                <div class="container">
-                    <div class="row docs-buttons">
-                        <div class="column three">
-                            <div class="button">Button</div>
-                        </div>
-                        <div class="column three">
-                            <div class="button button-inverse">Inverse Button</div>
-                        </div>
-                        <div class="column three">
-                            <div class="button button-primary">Primary Button</div>
-                        </div>
-                        <div class="column three">
-                            <div class="button button-disabled">Disabled Button</div>
-                        </div>
+            <h6 class="docs-header">Buttons</h6>
+            <p><em>Caption for buttons...</em></p>
+            <div class="container">
+                <div class="row docs-buttons">
+                    <div class="column three">
+                        <div class="button">Button</div>
+                    </div>
+                    <div class="column three">
+                        <div class="button button-inverse">Inverse Button</div>
+                    </div>
+                    <div class="column three">
+                        <div class="button button-primary">Primary Button</div>
+                    </div>
+                    <div class="column three">
+                        <div class="button button-disabled">Disabled Button</div>
                     </div>
                 </div>
+            </div>
         </div>
+
         <div class="docs-section" id="forms">
             <h6 class="docs-header">Forms</h6>
             <p><em>Caption for forms...</em></p>
@@ -143,6 +257,7 @@
                 </div>
             </form>
         </div>
+
         <div class="docs-section" id="lists">
             <h6 class="docs-header">Lists</h6>
             <p>Transparent supports different types of lists for every usage and every skin has it's own benefits.
@@ -192,13 +307,14 @@
                 </div>
             </div>
         </div>
+
         <div class="docs-section" id="images">
             <h6 class="docs-header">Images</h6>
             <p>Resizing or cropping of images is often used on Website. The most common types are included in this UI Kit. Three different
                 types are included, the <code>.img-rounded</code>, <code>.img-circle</code> and <code>.img-responsive</code>. First, the rounded is
                 used for images with slightly rounded corners. The circle one is used for totally round images and the responsive one can be used
-                to auto-resize the image on shrink/enlarge. </p>
-            <p><strong>Tipp:</strong> use the <code>.img-framed</code> class for a thin 3px border around it.</p>
+                to auto-resize the image on shrink/enlarge. There's another helper class for centering images horizontally, called <code>.img-centered</code>.</p>
+            <p><strong>Hint:</strong> use the <code>.img-framed</code> class for a thin 3px border around it.</p>
             <br>
             <div class="container">
                 <div class="row">
@@ -220,6 +336,7 @@
                 </div>
             </div>
         </div>
+
         <div class="docs-section" id="notifications">
             <h6 class="docs-header">Notifications</h6>
             <p>Notifications are mostly used in WebApplications with very much user-interaction. But they can also be used
@@ -247,6 +364,7 @@
                 </div>
             </div>
         </div>
+
         <div class="docs-section" id="icons">
             <h6 class="docs-header">Icons</h6>
             <p>There are a ton of icons (147) as classes avaible. Please checkk the demo file in the folder ico
@@ -254,42 +372,44 @@
                 it is free to use and free of charge in commercial use.
             </p>
             <div class="container docs-icon-container">
-                <div class="row">
-                    <div class="column one">
-                        <span class="icon-alert"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-alignment-align"></span>
-                    </div>
-                    <div class="column one">
-                        <span class=" icon-alignment-aligned-to"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-alignment-unalign"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-arrow-down"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-arrow-left"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-arrow-right"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-beer"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-book"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-briefcase"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-bookmark"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-broadcast"></span>
+                <div class="hide-on-mobile">
+                    <div class="row">
+                        <div class="column one">
+                            <span class="icon-alert"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-alignment-align"></span>
+                        </div>
+                        <div class="column one">
+                            <span class=" icon-alignment-aligned-to"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-alignment-unalign"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-arrow-down"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-arrow-left"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-arrow-right"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-beer"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-book"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-briefcase"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-bookmark"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-broadcast"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -368,184 +488,191 @@
                         <span class="icon-graph"></span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="column one">
-                        <span class="icon-heart"></span>
+                <div class="hide-on-mobile">
+                    <div class="row">
+                        <div class="column one">
+                            <span class="icon-heart"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-home"></span>
+                        </div>
+                        <div class="column one">
+                            <span class=" icon-hourglass"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-inbox"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-info"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-jersey"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-key"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-light-bulb"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-link"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-location"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-mail"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-megaphone"></span>
+                        </div>
                     </div>
-                    <div class="column one">
-                        <span class="icon-home"></span>
+                    <div class="row">
+                        <div class="column one">
+                            <span class="icon-zap"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-unfold"></span>
+                        </div>
+                        <div class="column one">
+                            <span class=" icon-tools"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-terminal"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-tag"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-telescope"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-sign-in"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-search"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-rocket"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-rss"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-puzzle"></span>
+                        </div>
+                        <div class="column one">
+                            <span class="icon-quote"></span>
+                        </div>
                     </div>
-                    <div class="column one">
-                        <span class=" icon-hourglass"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-inbox"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-info"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-jersey"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-key"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-light-bulb"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-link"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-location"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-mail"></span>
-                    </div>
-                    <div class="column one">
-                        <span class="icon-megaphone"></span>
+                </div>
+                <div class="show-on-mobile">
+                    <div class="row">
+                        <div class="column twelve">
+                            <p>&nbsp;</p>
+                            <p class="text-center"><em>More Icons avaible on a Desktop machine</em></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="docs-section" id="util">
+
+        <div class="docs-section" id="usage">
             <h6 class="docs-header">Media Queries</h6>
             <p>Transparent uses media queries with the <code>min-width</code> property, this means you have to write the code <strong>mobile first</strong>. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. There are four sizes:</p>
-            <table class="full-width">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Range in px</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Desktop HD</td>
-                        <td>For all large monitors and huge screens</td>
-                        <td>1200px and more</td>
-                    </tr>
-                    <tr>
-                        <td>Desktop</td>
-                        <td>General query for desktop computer</td>
-                        <td>750px - 1000px</td>
-                    </tr>
-                    <tr>
-                        <td>Tablet</td>
-                        <td>Used for normal tablets such as iPad and Galaxy Tab</td>
-                        <td>550px - 750px</td>
-                    </tr>
-                    <tr>
-                        <td>Phablet</td>
-                        <td>Mixins between Phones and Tablets</td>
-                        <td>400px - 550px</td>
-                    </tr>
-                    <tr>
-                        <td>Mobile</td>
-                        <td>For mobile phones and smaller devices</td>
-                        <td>0 - 400px</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="docs-section" id="devices">
-            <h6 class="docs-header">Device Classes <span class="docs-optional">Optional</span></h6>
-            <p>You can use the ghostkit device CSS sheet for hiding elements on specific devices, for example
-                if you want to hide an element on mobile, just add the class <code>.hide-on-mobile</code> to the element.
-                The same with desktop; if you want to hide an element for all devices except mobile-phone use <code>.hide-ex-mobile</code>.
-                Simple and cool, huh?
-            </p>
-            <p><strong>Attention: </strong>You have to include the <code>ghostkit-devices.css</code> to use this classes</p>
-            <div class="container">
-                <div class="row">
-                    <div class="column twelve">
-                        <div class="hide-on-mobile">
-                            <table class="first-col-marked full-width">
-                                <thead>
-                                    <tr>
-                                        <th>CSS Class</th>
-                                        <th>Mobile</th>
-                                        <th>Phablet</th>
-                                        <th>Tablet</th>
-                                        <th>Desktop</th>
-                                        <th>HD Screens</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>show-on-mobile</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-invisible">hidden</td>
-                                    </tr>
-                                    <tr>
-                                        <td>show-on-small</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-invisible">hidden</td>
-                                    </tr>
-                                    <tr>
-                                        <td>hide-on-hd</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-invisible">hidden</td>
-                                    </tr>
-                                    <tr>
-                                        <td>hide-on-desktop</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-visible">visible</td>
-                                    </tr>
-                                    <tr>
-                                        <td>hide-on-tablet</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                    </tr>
-                                    <tr>
-                                        <td>hide-on-mobile</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                    </tr>
-                                    <tr>
-                                        <td>hide-on-phablet</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                    </tr>
-                                    <tr>
-                                        <td>show-on-desktop</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-invisible">hidden</td>
-                                        <td class="mark-visible">visible</td>
-                                        <td class="mark-visible">visible</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="show-on-mobile">
-                            <p class="text-center"><em>Table avaible on a Desktop machine</em></p>
-                        </div>
-                    </div>
-                </div>
+            <div class="hide-on-mobile">
+                <table class="full-width">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Range in px</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desktop HD</td>
+                            <td>For all large monitors and huge screens</td>
+                            <td>1200px and more</td>
+                        </tr>
+                        <tr>
+                            <td>Desktop</td>
+                            <td>General query for desktop computer</td>
+                            <td>750px - 1000px</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                            <td>Used for normal tablets such as iPad and Galaxy Tab</td>
+                            <td>550px - 750px</td>
+                        </tr>
+                        <tr>
+                            <td>Phablet</td>
+                            <td>Mixins between Phones and Tablets</td>
+                            <td>400px - 550px</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td>For mobile phones and smaller devices</td>
+                            <td>0 - 400px</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="show-on-mobile">
+                <p class="text-center">
+                    <em>Table avaible on a Desktop machine</em>
+                </p>
             </div>
         </div>
+
+        <div class="docs-section" id="queries">
+            <h6 class="docs-header">Media Queries</h6>
+            <p>Transparent uses media queries with the <code>min-width</code> property, this means you have to write the code <strong>mobile first</strong>. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. There are four sizes:</p>
+            <div class="hide-on-mobile">
+                <table class="full-width">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Range in px</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desktop HD</td>
+                            <td>For all large monitors and huge screens</td>
+                            <td>1200px and more</td>
+                        </tr>
+                        <tr>
+                            <td>Desktop</td>
+                            <td>General query for desktop computer</td>
+                            <td>750px - 1000px</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                            <td>Used for normal tablets such as iPad and Galaxy Tab</td>
+                            <td>550px - 750px</td>
+                        </tr>
+                        <tr>
+                            <td>Phablet</td>
+                            <td>Mixins between Phones and Tablets</td>
+                            <td>400px - 550px</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td>For mobile phones and smaller devices</td>
+                            <td>0 - 400px</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="show-on-mobile">
+                <p class="text-center">
+                    <em>Table avaible on a Desktop machine</em>
+                </p>
+            </div>
+        </div>
+
         <div class="docs-section" id="js">
             <h6 class="docs-header">JavaScript Framework <span class="docs-optional">Optional</span></h6>
             <div class="container">
@@ -573,35 +700,37 @@
 }).register('default', function() {
     // code for all devices
     console.log('Ill run all the time :)');
-}).init();</code></pre>
-        </div>
-        <div class="docs-section docs-center-image">
-                <h6 class="docs-header">Browser Support</h6>
-                <p>For partial support visit <a href="caniuse.com">Can I use</a>, for example border-radius.</p>
-                <div class="container">
-                    <div class="row">
-                        <div class="column three">
-                            <img src="img/browser/chrome.png" alt="Browser Icon" />
-                            <p class="text-center"><strong>Chrome 1+</strong></p>
-                        </div>
-                        <div class="column three">
-                            <img src="img/browser/firefox.png" alt="Browser Icon" />
-                            <p class="text-center"><strong>Firefox 6+</strong></p>
-                        </div>
-                        <div class="column three">
-                            <img src="img/browser/safari.png" alt="Browser Icon" />
-                            <p class="text-center"><strong>Safari 1+</strong></p>
-                        </div>
-                        <div class="column three">
-                            <img src="img/browser/internet-explorer.png" alt="Browser Icon" />
-                            <p class="text-center"><strong>IE 8+</strong></p>
-                        </div>
+}).init();
+</code></pre>
+    </div>
+        <div class="docs-section docs-center-image" id="support">
+            <h6 class="docs-header">Browser Support</h6>
+            <p>For partial support visit <a href="caniuse.com">Can I use</a>, for example border-radius.</p>
+            <div class="container half-cols">
+                <div class="row">
+                    <div class="column three">
+                        <img src="img/browser/chrome.png" alt="Browser Icon" />
+                        <p class="text-center"><strong>Chrome 1+</strong></p>
+                    </div>
+                    <div class="column three">
+                        <img src="img/browser/firefox.png" alt="Browser Icon" />
+                        <p class="text-center"><strong>Firefox 6+</strong></p>
+                    </div>
+                    <div class="column three">
+                        <img src="img/browser/safari.png" alt="Browser Icon" />
+                        <p class="text-center"><strong>Safari 1+</strong></p>
+                    </div>
+                    <div class="column three">
+                        <img src="img/browser/internet-explorer.png" alt="Browser Icon" />
+                        <p class="text-center"><strong>IE 8+</strong></p>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
+    </div> <!-- @end main container-->
     <script src="js/jquery.js"></script>
-    <script src="js/scroll.js"></script>
     <script src="plugins/prism.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>
