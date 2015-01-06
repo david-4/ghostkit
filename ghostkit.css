@@ -398,6 +398,11 @@ input[type="reset"].button-disabled {
     border: 4px solid #ccc;
 }
 
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
 ul,
 ol,
 dl {
