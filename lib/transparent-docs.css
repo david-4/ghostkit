@@ -110,6 +110,60 @@
     color: #222;
 }
 
+pre.doc {
+    overflow: hidden;
+    box-shadow: none;
+    border: none;
+    background: none;
+    background-color: transparent;
+}
+
+code.doc {
+    overflow: hidden !important;
+    padding: 11px;
+    border: none;
+
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+pre[class*='language-'] > code[data-language] {
+    overflow: hidden;
+}
+
+.token.string {
+    color: #FF0040;
+}
+
+.token.function {
+    color: #222;
+}
+
+.token.comment {
+    color: #bbb;
+}
+
+.doc-icon-lg {
+    text-align: center;
+    display: block;
+    font-size: 7rem;
+}
+
+.docs-optional {
+    font-weight: normal;
+    letter-spacing: .1em;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.docs-optional:before {
+    content: "(";
+}
+
+.docs-optional:after {
+    content: ")";
+}
+
 @media (max-width: 400px) {
     .docs-icon-container .column.one {
         float: left;
