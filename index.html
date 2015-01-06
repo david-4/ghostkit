@@ -10,31 +10,41 @@
 </head>
 <body>
     <div class="container">
-    	    <!-- Page section begins here -->
-	    <div class="jumbo" style="margin-top:20px;">
-	    	<h1 class="text-center">Hello World</h1>
-		<p class="text-center">And welcome to Ghostkit, the modern UI on ~600 lines</p>
-	    </div>
-	    <div class="container">
-		<div class="row">
-	    	    <div class="column six">
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-			sed diam nonumy eirmod <mark>tempor invidunt ut labore et dolore
-			magna aliquyam erat, sed diam</mark> voluptua. At vero eos et
-			accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-			no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-		    </div>
-		    <div class="column six">
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-			sed diam nonumy eirmod tempor invidunt ut labore et dolore
-			magna aliquyam erat, <del>sed diam voluptua. At vero eos et
-			accusam et justo duo</del> dolores et ea rebum. Stet clita kasd gubergren,
-			no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-		    </div>
-		</div>
-	    </div>
-	</div>
+        <!-- Page section begins here -->
+        <div class="jumbo" style="margin-top:20px;">
+            <h1 class="text-center">Hello World</h1>
+            <p class="text-center">And welcome to Ghostkit, the modern UI on ~600 lines</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column six">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod <mark>tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam</mark> voluptua. At vero eos et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+                <div class="column six">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, <del>sed diam voluptua. At vero eos et
+                        accusam et justo duo</del> dolores et ea rebum. Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ext/ghostkit.js"></script>
+    <script charset="utf-8">
+        ghostkit.register('desktop', function() {
+            console.log('Im desktop!');
+        }).register('mobile', function() {
+            console.log('Im mobile!');
+        }).register('default', function() {
+            console.log('Ill run all the time :)');
+        }).init();
+    </script>
 </body>
 </html>
