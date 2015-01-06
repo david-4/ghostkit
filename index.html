@@ -4,281 +4,42 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Transparent Kit</title>
-    <link rel="stylesheet" href="lib/transparent-0.1.0.css">
-    <link rel="stylesheet" href="lib/transparent-docs.css">
+    <title>Your Title here</title>
+    <link rel="stylesheet" href="lib/ghostkit.css">
+    <link rel="stylesheet" href="lib/ghostkit-devices.css">
+    <link rel="stylesheet" href="lib/ghostkit-icons.css">
+	<style>
+		/* Remove me! */
+		body > .container:first-child { margin-top: 20px; }
+		body > .container:last-child {border-bottom: 1px solid #eee; }
+	</style>
 </head>
 <body>
     <div class="container">
-        <div class="docs-navigation">
-            <div class="container">
-                <ul class="navigation">
-                    <li>
-                        <a href="#typography">Typo</a>
-                    </li>
-                    <li>
-                        <a href="#elements">Elements</a>
-                    </li>
-                    <li>
-                        <a href="#util">Utility</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="docs-section docs-first-section" id="typography">
-            <h6 class="docs-header">Typography</h6>
-            <div class="container docs-example">
-                <div class="row">
-                    <div class="column twelve">
-                        <p>
-                            Type is all set with the rems, so font-sizes and spacial
-                            relationships can be responsively sized based on a single
-                            HTML font-size property. Transparent never changes
-                            the <code>font-size</code> but it's there in case you
-                            need it for your project. All measurements are still based on 10px
-                            though so, an &lt;h1&gt; with 5.0rem <code>font-size</code> just means 50px.
-                            single font-size property.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column six">
-                        <p><strong>The typography is based on</strong> the Raleway font, served
-                        by <a href="http://google.com/fonts">Google Fonts</a> server. If you want to use
-                        another local font during to high loading times, you can. Just include the font
-                        and add it to the body tag with alternate fonts and a <code>sans-serif</code> fallback.</p>
-                        <p><strong>Classes are also provided</strong> for every heading, containing
-                        its specific <code>letter-spacing</code>, <code>font-size</code> and <code>line-height</code>.
-                        Use the classes <code>.h1</code> - <code>.h6</code> to add the specific style to any element.
-                        </p>
-                    </div>
-                    <div class="column six">
-                        <h1>Heading <code>h1</code></h1>
-                        <h2>Heading <code>h2</code></h2>
-                        <h3>Heading <code>h3</code></h3>
-                        <h4>Heading <code>h4</code></h4>
-                        <h5>Heading <code>h5</code></h5>
-                        <h6>Heading <code>h6</code></h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="docs-section" id="typo-util">
-            <h6 class="docs-header">Typo Utility</h6>
-            <p>Transparent provides some new <code>HTML5</code> tags for advanced typography stilings. One of them is the
-                <code>&lt;del&gt;</code> tag, to strike through text which isn't longer valid. Another useful helper, called
-                <code>&lt;mark&gt;</code> to highlight content like a stabilo. Mostly seen on this page, there's the <code>&lt;code&gt;</code> tag, which
-                enables you to mark program-code. See the example below with a tiny meanless story:</p>
-            <div class="container">
-                <div class="row">
-                    <div class="column six">
-                        <p>The first mate and his Skipper too <del>will do their very best to make the others comfortable in their tropic island nest.</del> Flying away on a wing and a prayer. Who could it be? Believe it or not its just me. we might as well say... Would you be mine? Could you be mine? </p>
-                    </div>
-                    <div class="column six">
-                        <p>Won't you be my neighbor. Fish <mark>don't fry in the kitchen and beans don't burn</mark> on the grill. Took a whole lotta tryin' just to get up that hill. And we'll do it our way yes our way. Make all our dreams come true for me and you. Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. As long as we <code>live its you</code> and me baby. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="docs-section" id="elements">
-            <h6 class="docs-header">Buttons</h6>
-            <p><em>Caption for buttons...</em></p>
-            <div class="container">
-                <div class="row docs-buttons">
-                    <div class="column three">
-                        <div class="button">Button</div>
-                    </div>
-                    <div class="column three">
-                        <div class="button button-inverse">Inverse Button</div>
-                    </div>
-                    <div class="column three">
-                        <div class="button button-primary">Primary Button</div>
-                    </div>
-                    <div class="column three">
-                        <div class="button button-disabled">Disabled Button</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="docs-section" id="forms">
-            <h6 class="docs-header">Forms</h6>
-            <p><em>Caption for forms...</em></p>
-            <form action="#" id="demo-frm">
-                <div class="container form-container">
-                    <div class="row">
-                        <div class="column six">
-                            <label for="frm_mail">Your E-Mail</label>
-                            <input class="full-width" type="text" id="frm_mail" name="mail" placeholder="info@service.com">
-                        </div>
-                        <div class="column six">
-                            <label for="frm_reason">Reason for contacting</label>
-                            <select class="full-width" id="frm_reason" name="reason">
-                                <option value="1">Question</option>
-                                <option value="2">Booking</option>
-                                <option value="3">Administration</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column six">
-                            <label for="frm_message">Enter your message</label>
-                            <textarea class="full-width" id="frm_message" name="message" placeholder="Your content here"></textarea>
-                        </div>
-                        <div class="column six">
-                            <span class="form-info">
-                                <input type="checkbox" name="frm_check" checked>
-                                I accept the <a href="#agb">AGB</a>s of this page.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column twelve">
-                            <input type="submit" name="frm-submit" class="button button-primary" value="Send">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="docs-section" id="lists">
-            <h6 class="docs-header">Lists</h6>
-            <p>Transparent supports different types of lists for every usage and every skin has it's own benefits.
-            Lists have multiple use-cases and can be used for nearly anything. That's why Transparent supports more
-            than the "normal" list types.</p>
-            <div class="container">
-                <div class="row">
-                    <div class="column six">
-                        <p>
-                            <strong>Unordered Lists</strong> can be used with the
-                            class <code>.raw</code> for an unstyled list or with
-                            the skin <code>.horizontal</code> which can be used as
-                            a navigation or suitable cases.
-                        </p>
-                        <p>
-                            <strong>Ordered Lists</strong> support the <code>.vintage</code>
-                            style for roman-styles (I, IV, XII and so on) or you can use
-                            the <code>.alphabetic</code> skin for an alphabetical enumeration.
-                        </p>
-                    </div>
-                    <div class="column six">
-                        <ul>
-                            <li>Main list is unordered</li>
-                            <li> With a sub ...
-                                <ol class="alphabetic">
-                                    <li>Alphabetic child list</li>
-                                    <li>and also with a </li>
-                                    <li>children, the ...
-                                        <ul class="horizontal">
-                                            <li>horizontal</li>
-                                            <li>list</li>
-                                            <li><a href="#">third</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ol class="vintage">
-                                            <li>or definition</li>
-                                            <li>list in vintage</li>
-                                        </ol>
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>back to main</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="docs-section">
-            <h6 class="docs-header">Images</h6>
-            <p>Resizing or cropping of images is often used on Website. The most common types are included in this UI Kit. Three different
-            types are included, the <code>.img-rounded</code>, <code>.img-circle</code> and <code>.img-responsive</code>. First, the rounded is
-            used for images with slightly rounded corners. The circle one is used for totally round images and the responsive one can be used
-            to auto-resize the image on shrink/enlarge. </p>
-            <p><strong>Tipp:</strong> use the <code>.img-framed</code> class for a thin 3px border around it.</p>
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="column four">
-                        <div class="docs-image img-rounded">
-                            rounded
-                        </div>
-                    </div>
-                    <div class="column four">
-                        <div class="docs-image img-circle">
-                            circle
-                        </div>
-                    </div>
-                    <div class="column four">
-                        <div class="docs-image img-responsive img-framed">
-                            responsive &amp; framed
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="docs-section" id="util">
-            <h6 class="docs-header">Media Queries</h6>
-            <p>Transparent uses media queries with the <code>min-width</code> property, this means you have to write the code <strong>mobile first</strong>. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. There are four sizes:</p>
-            <table class="full-width">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Range in px</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Desktop HD</td>
-                        <td>For all large monitors and huge screens</td>
-                        <td>1200px and more</td>
-                    </tr>
-                    <tr>
-                        <td>Desktop</td>
-                        <td>General query for desktop computer</td>
-                        <td>750px - 1000px</td>
-                    </tr>
-                    <tr>
-                        <td>Tablet</td>
-                        <td>Used for normal tablets such as iPad and Galaxy Tab</td>
-                        <td>550px - 750px</td>
-                    </tr>
-                    <tr>
-                        <td>Phablet</td>
-                        <td>Mixins between Phones and Tablets</td>
-                        <td>400px - 550px</td>
-                    </tr>
-                    <tr>
-                        <td>Mobile</td>
-                        <td>For mobile phones and smaller devices</td>
-                        <td>0 - 400px</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="docs-section docs-center-image">
-            <h6 class="docs-header">Browser Support</h6>
-            <p>For partial support visit <a href="caniuse.com">Can I use</a>, for example border-radius.</p>
-            <div class="container">
-                <div class="row">
-                    <div class="column three">
-                        <img src="img/browser/chrome.png" alt="Browser Icon" />
-                        <p class="text-center"><strong>Chrome 1+</strong></p>
-                    </div>
-                    <div class="column three">
-                        <img src="img/browser/firefox.png" alt="Browser Icon" />
-                        <p class="text-center"><strong>Firefox 6+</strong></p>
-                    </div>
-                    <div class="column three">
-                        <img src="img/browser/safari.png" alt="Browser Icon" />
-                        <p class="text-center"><strong>Safari 1+</strong></p>
-                    </div>
-                    <div class="column three">
-                        <img src="img/browser/internet-explorer.png" alt="Browser Icon" />
-                        <p class="text-center"><strong>IE 8+</strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="jumbo">
+			<h1 class="text-center">Hello World</h1>
+			<p class="text-center">And welcome to Ghostkit</p>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="column six">
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+					sed diam nonumy eirmod <mark>tempor invidunt ut labore et dolore 
+					magna aliquyam erat, sed diam</mark> voluptua. At vero eos et 
+					accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+					no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+				</div>
+				<div class="column six">
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+					sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+					magna aliquyam erat, <del>sed diam voluptua. At vero eos et 
+					accusam et justo duo</del> dolores et ea rebum. Stet clita kasd gubergren, 
+					no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
