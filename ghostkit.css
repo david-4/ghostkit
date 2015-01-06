@@ -260,6 +260,7 @@ input[type="reset"] {
     transition: background-color .2s, border-color .2s;
     -moz-transition: background-color .2s, border-color .2s;
     -webkit-transition: background-color .2s, border-color .2s;
+    width: 100%;
 }
 
 button > a,
@@ -398,6 +399,11 @@ input[type="reset"].button-disabled {
     border: 4px solid #ccc;
 }
 
+.img-centered {
+    display: block;
+    margin: 0 auto;
+}
+
 ul,
 ol,
 dl {
@@ -474,6 +480,10 @@ del {
 }
 
 @media (min-width: 400px) {
+    .button {
+        width: auto;
+    }
+    
     .container {
         width: 85%;
     }
