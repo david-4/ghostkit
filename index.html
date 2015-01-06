@@ -625,54 +625,103 @@
             </div>
         </div>
 
-        <div class="docs-section" id="queries">
-            <h6 class="docs-header">Media Queries</h6>
-            <p>Transparent uses media queries with the <code>min-width</code> property, this means you have to write the code <strong>mobile first</strong>. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. There are four sizes:</p>
-            <div class="hide-on-mobile">
-                <table class="full-width">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Range in px</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Desktop HD</td>
-                            <td>For all large monitors and huge screens</td>
-                            <td>1200px and more</td>
-                        </tr>
-                        <tr>
-                            <td>Desktop</td>
-                            <td>General query for desktop computer</td>
-                            <td>750px - 1000px</td>
-                        </tr>
-                        <tr>
-                            <td>Tablet</td>
-                            <td>Used for normal tablets such as iPad and Galaxy Tab</td>
-                            <td>550px - 750px</td>
-                        </tr>
-                        <tr>
-                            <td>Phablet</td>
-                            <td>Mixins between Phones and Tablets</td>
-                            <td>400px - 550px</td>
-                        </tr>
-                        <tr>
-                            <td>Mobile</td>
-                            <td>For mobile phones and smaller devices</td>
-                            <td>0 - 400px</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="show-on-mobile">
-                <p class="text-center">
-                    <em>Table avaible on a Desktop machine</em>
-                </p>
+        <div class="docs-section" id="device-classes">
+            <h6 class="docs-header">Device Classes *</h6>
+            <p>You can use the ghostkit device CSS sheet for hiding elements on specific devices, for example
+                if you want to hide an element on mobile, just add the class <code>.hide-on-mobile</code> to the element.
+                The same with desktop; if you want to hide an element for all devices except mobile-phone use <code>.hide-ex-mobile</code>.
+                Simple and cool, huh?</p>
+            <p><strong>* Attention: </strong>You have to include the <code>ghostkit-devices.css</code> to use this classes</p>
+            <div class="container">
+                <div class="row">
+                    <div class="column twelve">
+                        <div class="hide-on-mobile">
+                            <table class="first-col-marked full-width">
+                                <thead>
+                                    <tr>
+                                        <th>CSS Class</th>
+                                        <th>Mobile</th>
+                                        <th>Phablet</th>
+                                        <th>Tablet</th>
+                                        <th>Desktop</th>
+                                        <th>HD Screens</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>show-on-mobile</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-invisible">hidden</td>
+                                    </tr>
+                                    <tr>
+                                        <td>show-on-small</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-invisible">hidden</td>
+                                    </tr>
+                                    <tr>
+                                        <td>hide-on-hd</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-invisible">hidden</td>
+                                    </tr>
+                                    <tr>
+                                        <td>hide-on-desktop</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-visible">visible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>hide-on-tablet</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>hide-on-mobile</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>hide-on-phablet</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>show-on-desktop</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-invisible">hidden</td>
+                                        <td class="mark-visible">visible</td>
+                                        <td class="mark-visible">visible</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="show-on-mobile">
+                            <p class="text-center"><em>Table avaible on a Desktop machine</em></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
         <div class="docs-section" id="js">
             <h6 class="docs-header">JavaScript Framework <span class="docs-optional">Optional</span></h6>
             <div class="container">
