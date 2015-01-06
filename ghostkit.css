@@ -1,33 +1,8 @@
 /*! Ghostkit (c) 2015, janbiasi | MIT Licensed */
-@import url(http://fonts.googleapis.com/css?family=Raleway:500,400,300);
-
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-}
-
-::selection {
-    background: #C5EDFF;
-}
-
-::-moz-selection {
-    background: #C5EDFF;
-}
-
-::-webkit-input-placeholder {
-    color: #ccc;
-}
-:-moz-placeholder {
-   color: #ccc;
-   opacity: 1;
-}
-::-moz-placeholder {
-   color: #ccc;
-   opacity: 1;
-}
-:-ms-input-placeholder {
-   color: #ccc;
 }
 
 html,
@@ -45,6 +20,12 @@ html {
 
 body {
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
     font-size: 1.5em;
     line-height: 1.6;
     font-weight: 300;
@@ -173,6 +154,7 @@ table th:first-child,
 table td:first-child {
     padding-left: 0;
 }
+
 table th:last-child,
 table td:last-child {
     padding-right: 0;
@@ -202,8 +184,23 @@ textarea {
     appearance: none;
 }
 
+textarea {
+    overflow: auto;
+    min-height: 63px;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
 select {
     font: inherit;
+}
+
+label,
+legend {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 input[type="email"]:focus,
@@ -235,21 +232,6 @@ select {
     border: 1px solid #eee;
     border-radius: 4px;
     box-shadow: none;
-}
-
-textarea {
-    overflow: auto;
-    min-height: 63px;
-    color: inherit;
-    font: inherit;
-    margin: 0;
-}
-
-label,
-legend {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
 }
 
 button,
@@ -416,7 +398,6 @@ input[type="reset"].button-disabled {
     border: 4px solid #ccc;
 }
 
-/* List elements */
 ul,
 ol,
 dl {
@@ -463,7 +444,6 @@ ul.navigation {
     list-style-type: none;
 }
 
-/* Other HTML elements */
 hr {
     border: none;
     height: 1px;
@@ -561,7 +541,7 @@ del {
         width: 100.0%;
     }
 }
-/* Helper and util classes */
+
 .pull-left {
     float: left;
 }
@@ -587,10 +567,6 @@ del {
     visibility: hidden;
 }
 
-.show {
-    display: block;
-}
-
 .clear,
 .container:after,
 .row:after {
@@ -600,27 +576,36 @@ del {
 }
 
 @media (min-width: 550px) {
-    h1 {
-        font-size: 5.0rem;
-    }
+    h1 { font-size: 5.0rem; }
+    h2 { font-size: 4.2rem; }
+    h3 { font-size: 3.6rem; }
+    h4 { font-size: 3.0rem; }
+    h5 { font-size: 2.4rem; }
+    h6 { font-size: 1.5rem; }
+}
 
-    h2 {
-        font-size: 4.2rem;
-    }
+::selection {
+    background: #C5EDFF;
+}
 
-    h3 {
-        font-size: 3.6rem;
-    }
+::-moz-selection {
+    background: #C5EDFF;
+}
 
-    h4 {
-        font-size: 3.0rem;
-    }
+::-webkit-input-placeholder {
+    color: #ccc;
+}
 
-    h5 {
-        font-size: 2.4rem;
-    }
+:-moz-placeholder {
+   color: #ccc;
+   opacity: 1;
+}
 
-    h6 {
-        font-size: 1.5rem;
-    }
+::-moz-placeholder {
+   color: #ccc;
+   opacity: 1;
+}
+
+:-ms-input-placeholder {
+   color: #ccc;
 }
