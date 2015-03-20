@@ -464,14 +464,16 @@ del {
     text-decoration: line-through;
 }
 
-.container {
+.container,
+.container-fluid {
     position: relative;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.container img {
+.container img,
+.container-fluid img {
     max-width: 100%;
 }
 
@@ -487,11 +489,19 @@ del {
     .container {
         width: 85%;
     }
+    
+    .container-fluid {
+        width: 100%;
+    }
 }
 
 @media (min-width: 550px) {
     .container {
         max-width: 960px;
+    }
+    
+    .container-fluid {
+        max-width: 100%;
     }
 
     .container .row .column {
